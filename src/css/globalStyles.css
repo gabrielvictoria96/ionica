@@ -31,3 +31,7 @@ li {
 .container {
    padding: var(--padding-mobile);
 }
+
+h2 {
+   text-transform: uppercase;
+}

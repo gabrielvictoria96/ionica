@@ -31,6 +31,10 @@
     font-size: 14px;
 }
 
+.footer-list li a {
+    color: var(--grey);
+}
+
 /*links*/
 
 .footer-links li {

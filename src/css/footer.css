@@ -1,0 +1,67 @@
+.footer {
+    background-color: var(--dark-blue);
+    padding-top: 3rem;
+}
+
+/*títulos*/
+
+.footer-title {
+    color: #F9F9F9;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+
+/*organização*/
+
+.footer-list,
+.footer-copy span,
+.footer-title {
+    text-align: center;
+}
+
+.footer-list {
+    color: var(--grey);
+    margin-bottom: 32px;
+}
+
+.footer-list li {
+    margin: 8px auto;
+    font-size: 14px;
+}
+
+/*links*/
+
+.footer-links li {
+    line-height: 21px;
+    letter-spacing: 0.02em;
+}
+
+/*socials*/
+
+.footer-socials li {
+    font-size: 22px;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+/*contato*/
+
+.footer-contact {
+    font-size: 14px;
+}
+
+/*copy*/
+
+.footer-copy {
+    background-color: #2a3346;
+    height: 59px;
+    padding-top: 22px;
+}
+
+.footer-copy span {
+    font-size: 12px;
+    display: block;
+    color: rgba(255, 255, 255, 0.32);
+}

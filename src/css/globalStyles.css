@@ -11,7 +11,7 @@
    --light-blue: #9CAEC6;
    --grey: #9a9999;
    --padding-mobile: 1.5rem;
-   --pading-desktop: 5rem;
+   --padding-desktop: 2.5rem 7rem;
    --primary-font: 'Poppins', sans-serif;
 }
 
@@ -29,7 +29,8 @@ li {
 }
 
 .container {
-   padding: var(--padding-mobile);
+   width: 100%;
+   overflow-x: hidden;
 }
 
 h2 {

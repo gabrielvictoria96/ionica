@@ -11,9 +11,12 @@
    --light-blue: #9CAEC6;
    --grey: #9A9999;
 
-   --padding-mobile: 2.5rem;
+   --padding-mobile: 1.5rem;
    --pading-desktop: 5rem;
 
    --primary-font: 'Poppins', sans-serif;
 }
 
+.container {
+   padding: var(--padding-mobile);
+}

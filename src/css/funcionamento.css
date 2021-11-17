@@ -1,0 +1,51 @@
+header {
+   height: 90vh;
+   width: 100%;
+   background: center center no-repeat;
+   background-size: cover;
+   background-image: url(../assets/img/funcionamento-BG.jpg);
+}
+
+.header-title {
+   margin-top: 50px;
+   padding: var(--padding-mobile);
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;  
+   flex-direction: column;
+}
+
+
+
+.header-title h2 {
+   font-size: 2.125rem;
+   font-family: var(--primary-font);
+   font-weight: bolder;
+   color: var(--dark-blue);
+   margin: 0 auto;
+
+}
+
+.header-title .orange {
+   color: var(--orange);
+}
+
+.blink {
+   color: var(--dark-blue);
+   animation: blink 1.5s linear infinite;
+   margin-top: 250px;
+   font-size: 2.5rem;
+}
+
+
+@keyframes blink{
+   0%{opacity: 0;}
+   50%{opacity: .5;}
+   100%{opacity: 1;}
+   }
+
+
+   .funcionamento {
+      background-color: var(--dark-blue);
+      height: 100vh;
+   }

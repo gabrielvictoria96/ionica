@@ -10,8 +10,8 @@
    --white: #ffffff;
    --light-blue: #9CAEC6;
    --grey: #9a9999;
-   --padding-mobile: 1.5rem;
-   --padding-desktop: 2.5rem 7rem;
+   --padding-mobile: 3rem;
+   --padding-desktop: 4.5rem 7rem;
    --primary-font: 'Poppins', sans-serif;
 }
 
@@ -35,4 +35,12 @@ li {
 
 h2 {
    text-transform: uppercase;
+}
+
+p-mob {
+   padding: var(--padding-mobile);
+}
+
+p-desk {
+   padding: var(--padding-desktop);
 }

@@ -1,0 +1,18 @@
+#como-funciona {
+    padding-top: 2rem
+}
+
+#como-funciona .como-funciona-cta {
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+#como-funciona h2 {
+    margin-bottom: 1.4rem;
+}
+
+#como-funciona .palms-bg {
+    width: 100%;
+    display: block;
+}

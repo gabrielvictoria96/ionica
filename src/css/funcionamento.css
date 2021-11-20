@@ -47,5 +47,321 @@ header {
 
    .funcionamento {
       background-color: var(--dark-blue);
-      height: 100vh;
    }
+
+   .funcionamento-content {
+      width: 100%;
+      max-width: 1540px;
+      margin: 0 auto;
+   }
+
+   .funcionamento h3 {
+      text-align: center;
+      padding-top: 50px;
+      color: var(--white);
+      font-family: var(--primary-font);
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+   }
+
+   .funcionamento .funcionamento-img {
+      padding: 10px;
+      width: 100%;
+      margin: 20px auto;
+      
+   }
+
+
+
+   .funcionamento .funcionamento-img img {
+      width: 100%;
+      object-fit: cover;
+   }
+
+   .equipamentos {
+      padding-bottom: 60px;
+   }
+
+   .equipamentos-lista {
+      border-radius: 4px;
+      display: flex;
+      width: 100%;
+      height: 250px;
+      overflow-x: scroll;
+      margin-bottom: 25px;
+      
+   }
+
+   .equipamentos-lista li {
+      padding: 10px;
+      width: 95%;
+   }
+
+   .equipamentos-lista img {
+      object-fit: cover;
+      height: 100%;
+      cursor: pointer;      
+   }
+
+   .equipamentos-lista::-webkit-scrollbar {
+      width: 18px;
+   }
+   
+   .equipamentos-lista::-webkit-scrollbar-thumb {
+      background: var(--orange);
+      border-left: 4px solid var(--dark-blue);
+      border-right: 4px solid  var(--dark-blue);
+      border-radius: 50px;   
+   }
+   
+   .equipamentos::-webkit-scrollbar-track {
+      background: var(--dark-blue);
+   }
+   
+.equipamentos-descricao h3 {
+   color: var(--light-blue);
+}
+
+.equipamentos-descricao h3::before {
+   content: '';
+   display: inline-block;
+   width: 20px;
+   height: 10px;
+   margin-right: 15px;
+   background: var(--orange);
+   
+}
+
+.equipamentos-descricao p {
+   color: var(--white);
+   margin: 30px;
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+
+.js-tabcontent section {
+   display: none;
+}
+
+.js-tabcontent section.ativo {
+   display: block !important;
+   animation: show .5s forwards;
+}
+
+.js-scroll {
+   opacity: 0;
+   transform: translate3d(-30px, 0, 0);
+   transition: .3s;
+}
+
+.js-scroll.ativo {
+   opacity: 1;
+   transform: translate3d(0, 0, 0);
+   transition: .3s;
+}
+
+.duvidas {
+   background-color: #fff;
+}
+
+.duvidas-background {
+   height: 400px;
+   background: url(../assets/img/palms-bottom.png) bottom center no-repeat;
+   background-size: cover;
+}
+
+.duvidas-content {
+   max-width: 1540px;
+   margin: 0 auto;
+   padding: var(--padding-mobile);
+}
+
+.duvidas .contact-buttons {
+   display: flex;
+   gap: 80px;
+   text-align: center;
+}
+
+.duvidas .contact-buttons a {
+   text-decoration: none;
+   color: var(--dark-blue);
+   font-size: 3rem;
+   transition: 200ms ease-in-out;
+}
+
+.duvidas .contact-buttons a:hover {
+   color: green;
+   transition: 200ms ease-in-out;
+}
+
+.duvidas .contact-buttons legend {
+   font-size: 1rem;
+   margin-bottom: 50px;
+   opacity: .8;
+}
+
+.duvidas-button {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.duvidas-button h3 {
+   color: var(--dark-blue);
+   margin: 50px 0 40px 0;
+   font-size: 2rem;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.duvidas-button h3::after {
+   content: '';
+   border: 1px solid var(--orange);
+   margin-top: 20px;
+}
+
+.duvidas-button .btn {
+   width: 300px;
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+@keyframes show {
+   from {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+   }
+   to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+
+
+@media (min-width: 520px) {
+   .equipamentos-lista {
+      height: 350px;
+   }
+}
+
+@media (min-width: 700px) {
+   .equipamentos-lista {
+      height: 450px;
+   }
+}
+
+@media (min-width: 820px) {
+   .equipamentos-lista {
+      height: 550px;
+   }
+
+   .duvidas-button h3 {
+      font-size: 3rem;
+      margin-top: 80px;
+   }
+
+   .duvidas-button h3::after {
+      margin: 50px 0 20px 0;
+   }
+   
+   .duvidas .contact-buttons {
+      margin-bottom: 30px;
+   }
+
+   .duvidas .contact-buttons a {
+      font-size: 4rem;
+   }
+
+   .duvidas .contact-buttons legend {
+      font-size: 1.3rem;
+   }
+
+   .duvidas-button .btn {
+      width: 450px;
+      font-size: 1.6rem;
+   }
+   .duvidas-background {
+      height: 500px;
+   }
+}
+
+@media (min-width: 1020px) {
+   .equipamentos {
+      display: flex;
+   }
+   .equipamentos-lista {
+      flex-direction: column;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: 35%;
+      height: 350px;
+   }
+
+   .equipamentos-lista img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+   }
+
+   .equipamentos-descricao {
+      width: 60%;
+   }
+
+   .duvidas-button h3 {
+      font-size: 3.5rem;
+      margin-top: 80px;
+   }
+
+   .duvidas .contact-buttons a {
+      font-size: 4rem;
+   }
+
+   .duvidas .contact-buttons legend {
+      font-size: 1.3rem;
+   }
+
+   .duvidas-button .btn {
+      width: 450px;
+      font-size: 1.6rem;
+   }
+
+   .duvidas-background {
+      height: 600px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .duvidas-background {
+      height: 800px;
+   }
+}
+
+@media (min-width: 1450px) {
+   .funcionamento h3 {
+      font-size: 3rem;
+   }
+
+   .equipamentos-descricao h3 {
+      font-size: 2rem;
+   }
+   
+   .equipamentos-descricao p {
+      color: var(--white);
+      margin: 30px;
+      text-align: center;
+      font-size: 1.5rem;
+   }
+
+   .equipamentos-lista img {
+      border-radius: 7px;
+   }
+}
+
+@media (min-width: 1600px) {
+   .duvidas-background {
+      height: 1000px;
+   }
+}

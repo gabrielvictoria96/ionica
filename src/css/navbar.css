@@ -20,9 +20,10 @@ header {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: #1a202df8;
+   background-color: #1a202dea;
    opacity: 0;
    transition: 200ms ease-in-out;
+   border-radius: 4px;
 }
 
 .navbar-links.ativo {

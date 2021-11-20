@@ -5,4 +5,10 @@
     border-radius: 14px;
     text-transform: uppercase;
     font-weight: bold;
+    transition: 200ms linear;
+}
+
+.btn:hover {
+   opacity: .7;
+   transition: 200ms linear;
 }

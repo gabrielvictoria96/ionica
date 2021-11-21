@@ -40,10 +40,10 @@ h2 {
    font-size: 1.8rem;
 }
 
-p-mob {
+.p-mob {
    padding: var(--padding-mobile);
 }
 
-p-desk {
+.p-desk {
    padding: var(--padding-desktop);
 }

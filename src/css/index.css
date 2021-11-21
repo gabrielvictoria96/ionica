@@ -1,11 +1,113 @@
-#como-funciona {
-    padding-top: 2rem
+/* #index-hero-header */
+#index-hero-header {
+    padding: 1.4rem 1.5rem 0;
 }
+
+#index-hero-header h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    font-size: 1.250rem;
+}
+
+h1 .bold-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+#index-hero-header .title-link-container {
+    margin-bottom: 2rem;
+}
+
+#index-hero-header img {
+    max-width: 100%;
+    display: block;
+}
+
+/* #why-solar*/
+
+#why-solar {
+    padding: 3rem 1.5rem .5rem;
+    background: var(--dark-blue);
+    text-align: center;
+}
+
+#why-solar h2,
+#why-solar p {
+    color: var(--white);
+    margin-bottom: 1.2rem;
+}
+
+/*#interactive-info*/
+
+
+#interactive-info {
+    background: var(--dark-blue);
+    padding: 1rem 1rem 2rem;
+}
+
+#interactive-info .interactive-btns-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#interactive-info .interactive-text-box {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 9px;
+    text-align: center;
+}
+
+/* #about-info */
+
+#about-info {
+    background-color: var(--dark-blue);
+    padding: .7rem 2rem;
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+}
+
+.about-info-container {
+    padding: 1rem 0;
+}
+
+.about-info-container img {
+    width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+#vision img {
+    width: 180px;
+}
+
+.about-info-container p {
+    color: var(--white);
+    margin-bottom: .5rem;
+}
+
+#values p {
+    margin-bottom: 1.5rem;
+}
+
+#mission .about-info-subtitle {
+    color: #9CAEC6;
+    font-weight: 700;
+    width: 70%;
+    margin: 0 auto 1rem;
+}
+
+.mission-info-bold {
+    font-weight: 700;
+}
+
+/* #como-funciona */
 
 #como-funciona .como-funciona-cta {
     text-align: center;
     position: relative;
-    top: 100px;
+    top: 90px;
 }
 
 #como-funciona h2 {

@@ -21,9 +21,11 @@ links.forEach((link) => {
 
 function initiTabNav() {
    const tabMenu = document.querySelectorAll('.js-tabmenu li');
+   const tabMenuImg = document.querySelectorAll('.js-tabmenu li img');
    const tabContent = document.querySelectorAll('.js-tabcontent section');
    if(tabMenu.length && tabContent.length) {
       tabContent[0].classList.add(activeClass);   
+      
    
    function activeTab(index) {
       tabContent.forEach((section) => {

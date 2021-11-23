@@ -49,11 +49,6 @@ header {
       background-color: var(--dark-blue);
    }
 
-   .funcionamento-content {
-      width: 100%;
-      max-width: 1540px;
-      margin: 0 auto;
-   }
 
    .funcionamento h3 {
       text-align: center;
@@ -68,6 +63,9 @@ header {
       padding: 10px;
       width: 100%;
       margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       
    }
 
@@ -75,7 +73,10 @@ header {
 
    .funcionamento .funcionamento-img img {
       width: 100%;
+      max-width: 900px;
       object-fit: cover;
+      border: 3px solid var(--orange);
+      border-radius: 5px;
    }
 
    .equipamentos {
@@ -92,6 +93,7 @@ header {
       
    }
 
+
    .equipamentos-lista li {
       padding: 10px;
       width: 95%;
@@ -101,6 +103,13 @@ header {
       object-fit: cover;
       height: 100%;
       cursor: pointer;      
+      transition: 200ms ease-in-out;
+   }
+
+   .equipamentos-lista img:hover {
+      transform: scale(1.01);
+      opacity: .8;
+      transition: 200ms ease-in-out;
    }
 
    .equipamentos-lista::-webkit-scrollbar {
@@ -161,8 +170,42 @@ header {
    transition: .3s;
 }
 
+.etapas {
+   margin-bottom: 30px;
+}
+
+.etapas-box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 40px;
+}
+
+.etapas-box i {
+   color: var(--orange);
+   font-size: 90px;
+   margin: 10px;
+}
+
+.box-text {
+   margin: 20px 0;
+}
+
+.box-text h4 {
+   font-size: 1.8em;
+   color: var(--light-blue);
+   margin-bottom: 10px;
+}
+
+.box-text p {
+   color: #fff;
+   font-size: 1.125rem;
+   text-align:justify;
+}
+
 .duvidas {
    background-color: #fff;
+   position: relative;
 }
 
 .duvidas-background {
@@ -250,6 +293,21 @@ header {
 @media (min-width: 700px) {
    .equipamentos-lista {
       height: 450px;
+   }
+
+   .etapas-box {
+      flex-direction: row;
+   }
+   .etapas-box i {
+      margin: 20px;
+   }
+   
+   .reverse {
+      flex-direction: row-reverse;
+   }
+
+   .reverse i {
+      margin-left: 30px;
    }
 }
 
@@ -357,6 +415,18 @@ header {
 
    .equipamentos-lista img {
       border-radius: 7px;
+   }
+
+   .etapas-box i {
+      font-size: 120px;
+   }
+
+   .box-text h4 {
+      font-size: 2rem;
+   }
+
+   .box-text p {
+      font-size: 1.5rem;
    }
 }
 

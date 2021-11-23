@@ -9,8 +9,8 @@
 }
 
 .btn:hover {
-    opacity: .7;
-    transition: 200ms linear;
+    background: var(--dark-blue);
+    transition: 250ms linear;
 }
 
 /* Botões da sessão interativa da index */
@@ -23,11 +23,6 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 0.25);
     margin: .5rem;
-}
-
-.btn:hover {
-    opacity: 1;
-    transition: 200ms linear;
 }
 
 .interactive-btn:active {

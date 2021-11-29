@@ -44,3 +44,23 @@ function initiTabNav() {
 initiTabNav();
 
 
+//GALERIA
+
+let imagem = document.querySelectorAll('.small-img');
+let modal = document.querySelector('.modal');
+let modalImg = document.querySelector('#modal-img');
+let btnClose = document.querySelector('#btn-close');
+let src = "";
+
+imagem.forEach((img => {
+   img.addEventListener('click', function(){
+      src = img.getAttribute('src');
+      modalImg.setAttribute('src', src);
+      modal.classList.toggle('modal_active');
+   });
+}));
+
+
+btnClose.addEventListener('click', () => {
+   modal.classList.toggle('modal_active');
+});

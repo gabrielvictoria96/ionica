@@ -74,6 +74,14 @@ header {
 }
 
 
+.blink {
+   color: var(--dark-blue);
+   animation: blink 1.5s linear infinite;
+   margin-top: 200px;
+   font-size: 2rem;
+   
+}
+
 /* RESPONSIVIDADE */
 
 

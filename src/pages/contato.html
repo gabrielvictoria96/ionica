@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--STYLES-->
+   <link rel="stylesheet" href="../css/globalStyles.css">
+   <link rel="stylesheet" href="../css/navbar.css">
+   <link rel="stylesheet" href="../css/funcionamento.css">
+   <link rel="stylesheet" href="../css/contato.css">
+   <link rel="stylesheet" href="../css/button.css">
+   <link rel="stylesheet" href="../css/footer.css">
+   <!--FONTS-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,800;1,300&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+   <title>Contato</title>
+</head>
+
+<body>
+   <div class="container">
+      <nav class="navbar">
+         <div class="navbar-logo">
+            <img src="../assets/img/logonav.png" alt="Logo Ionica Energia" />
+         </div>
+         <ul class="navbar-links">
+            <li><a href="/index.html">Sobre</a></li>
+            <li><a href="./funcionamento.html">Funcionamento</a></li>
+            <li><a href="./instalacoes.html">Instalações</a></li>
+            <li><a href="#">Depoimentos</a></li>
+            <li><a href="#contact" class="orcamento">Contato</a></li>
+         </ul>
+         <div class="navbar-btn">
+            <i class="fas fa-bars"></i>
+         </div>
+      </nav>
+      <div class="page-title">
+         <h3>Contato</h3>
+      </div>
+      <div class="content">
+         <section class="section">
+            <div class="contact">
+               <div class="contact-items">
+                  <i class="fas fa-envelope"></i>
+                  <span>E-mail</span>
+               </div>
+               <div class="info">
+                  <a href="mailto:contato@ionica.com">contato@ionica.com</a>
+               </div>
+               <div class="contact-items">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>Telefone</span>
+               </div>
+               <div class="info">
+                  <a href="tel:+5551999990000">
+                     (51) 99999-0000
+                  </a>
+               </div>
+               <div class="contact-items">
+                  <i class="fas fa-envelope"></i>
+                  <span>Endereço</span>
+               </div>
+               <div class="info">
+                  <a href="https://goo.gl/maps/ZLLMP3J7V4THFZRJ8">Av. Itália, 2174, Balneário Pinhal/RS</a>
+               </div>
+            </div>
+            <div class="iframe">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.575073303696!2d-50.23729418488008!3d-30.24919188180832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95181bbcc9fcd1cf%3A0xa9e6cd2b852893c3!2sAv.%20It%C3%A1lia%2C%202174%20-%20Balne%C3%A1rio%20Pinhal%2C%20RS%2C%2095599-000!5e0!3m2!1spt-BR!2sbr!4v1638753023151!5m2!1spt-BR!2sbr"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+         </section>
+      </div>
+      <div class="page-title ">
+         <h3>Orçamento</h3>
+      </div>
+      <div class="content">
+         <div class="wrapper">
+            <form id="contact" action="" method="post">
+               <h3>Contate-nos!</h3>
+               <h4>Envie suas informações para solicitar um orçamento.</h4>
+               <fieldset>
+                  <input placeholder="Nome e sobrenome" type="text" tabindex="1" required autofocus>
+               </fieldset>
+               <fieldset>
+                  <input placeholder="Seu email" type="email" tabindex="2" required>
+               </fieldset>
+               <fieldset>
+                  <input placeholder="Endereço" type="tel" tabindex="3" required>
+               </fieldset>
+               <fieldset class="endereco">
+                  <input placeholder="Número" type="tel" tabindex="3" required>
+                  <input placeholder="Bairro" type="tel" tabindex="3" required>
+                  <input placeholder="Cep" type="tel" tabindex="3" required>
+               </fieldset>
+               <fieldset>
+                  <input placeholder="Seu número de telefone" type="tel" tabindex="3" required>
+               </fieldset>
+               <fieldset>
+                  <input placeholder="Companhia elétrica" type="text" tabindex="4" required>
+               </fieldset>
+               <fieldset> Foto da sua conta de luz:
+                  <input type="file" name="file">
+               </fieldset>
+               <fieldset>
+                  <input name="enviar" type="submit" id="contact-submit">
+               </fieldset>
+            </form>
+         </div>
+      </div>
+</body>
+
+</html>

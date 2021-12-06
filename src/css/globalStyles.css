@@ -19,6 +19,8 @@
 html {
   font-family: var(--primary-font);
   scroll-behavior: smooth;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 body {

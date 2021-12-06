@@ -100,16 +100,36 @@ h1 .bold-title {
     margin-bottom: 1.5rem;
 }
 
-#mission .about-info-subtitle {
+#values .about-info-subtitle {
     color: #9CAEC6;
     font-weight: 700;
-    width: 70%;
+    font-size: 1.3rem;
+    width: 90%;
     margin: 0 auto 1rem;
 }
 
 .mission-info-bold {
     font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--orange);
+    display: block;
+    margin-bottom: .7rem;
 }
+
+.pillar {
+    padding: 1rem .75rem;
+    width: 90%;
+    margin: 1.6rem auto;
+    font-size: 1rem;
+}
+
+.pillar-icon {
+    display: block !important;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+
 
 /* #como-funciona */
 
@@ -165,6 +185,25 @@ h1 .bold-title {
     }
 
 
+    .values-pillars {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .pillar {
+        /* border: 1px solid red; */
+        padding: 1rem .75rem;
+        width: 50%;
+        display: inline-block;
+
+    }
+
+    .pillar-icon {
+        display: block !important;
+        font-size: 3rem;
+    }
+
+
     /* INTERACTIVE-INFO */
 
     #interactive-info .interactive-text-box {
@@ -178,8 +217,8 @@ h1 .bold-title {
     .about-info-container ul li {
         font-size: 1rem;
         line-height: 1.7rem;
-        width: 90%;
-        margin: 0 auto;
+        /* width: 90%; */
+
     }
 
     .about-info-container ul li {
@@ -225,16 +264,37 @@ h1 .bold-title {
 
     #why-solar h2,
     #why-solar p {
-        max-width: 750px;
+        max-width: 80%;
         margin: 1.2rem auto;
+    }
+
+    #why-solar p {
+        font-size: 1.2rem;
     }
 
     #interactive-info .interactive-text-box {
         max-width: 460px;
     }
 
+
+
     #about-info .about-info-container p {
-        max-width: 750px;
+        max-width: 70%;
+        font-size: 1.2rem;
+        margin: 1rem auto;
     }
 
+    .values-pillars {
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+
+
+
+
+
+
 }
+
+@media only screen and (min-width: 799px) {}

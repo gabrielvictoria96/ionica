@@ -82,6 +82,10 @@ h1 .bold-title {
     width: 180px;
 }
 
+#about-info .about-info-container p {
+    margin-bottom: 1.2rem;
+}
+
 .about-info-container p,
 .about-info-container ul li {
     color: var(--white);
@@ -126,7 +130,7 @@ h1 .bold-title {
 
 /*RESPONSIVIDADE*/
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 639px) {
 
     /*HERO*/
 
@@ -203,6 +207,34 @@ h1 .bold-title {
 
     .btn {
         font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (min-width: 799px) {
+
+    #index-hero-header {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #index-hero-header img {
+        max-width: 500px;
+    }
+
+
+    #why-solar h2,
+    #why-solar p {
+        max-width: 750px;
+        margin: 1.2rem auto;
+    }
+
+    #interactive-info .interactive-text-box {
+        max-width: 460px;
+    }
+
+    #about-info .about-info-container p {
+        max-width: 750px;
     }
 
 }

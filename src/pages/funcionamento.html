@@ -28,14 +28,16 @@
       <header>
          <nav class="navbar">
             <div class="navbar-logo">
-               <img src="../assets/img/logonav.png" alt="Logo Ionica Energia" />
+               <h1>
+                  <img src="../assets/img/logonav.png" alt="Logo Ionica Energia" />
+               </h1>
+
             </div>
             <ul class="navbar-links">
                <li><a href="/index.html">Sobre</a></li>
                <li><a href="#funcionamento">Funcionamento</a></li>
                <li><a href="./instalacoes.html">Instalações</a></li>
-               <li><a href="#">Depoimentos</a></li>
-               <li><a href="#" class="orcamento">Contato</a></li>
+               <li><a href="./contato.html" class="orcamento">Contato</a></li>
             </ul>
             <div class="navbar-btn">
                <i class="fas fa-bars"></i>
@@ -52,11 +54,16 @@
       <main class="funcionamento" id="funcionamento">
          <div class="content">
             <h3>Entenda Como Funciona:</h3>
+
+            <!-- Trocar div por figure -->
+
             <div class="funcionamento-img">
                <img src="../assets/img/EmbeddedImage.png" alt="Imagem Explicando como funciona a energia solar">
             </div>
             <h3>Equipamentos de Instalação:</h3>
             <section class="equipamentos">
+
+               <!-- Para trazer as imagens em pesquisa do google, usar figure -->
 
                <ul class="equipamentos-lista js-tabmenu">
                   <li>
@@ -152,17 +159,25 @@
                <h3>Restou alguma dúvida?<br> Entre em contato conosco!</h2>
                   <div class="contact-buttons">
                      <figcaption>
-                        <a href="#"><i class="fab fa-whatsapp"></i>
+                        <a
+                           href="https://api.whatsapp.com/send?phone=5551980496857&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20energia%20solar!"><i
+                              class="fab fa-whatsapp"></i>
                            <legend>Mande um WhatsApp.</legend>
                         </a>
                      </figcaption>
+
+                     <!-- Remover figcaption - usa-se apenas com figure -->
+
                      <figcaption>
-                        <a href="#"><i class="fas fa-phone-alt"></i>
+                        <a href="tel:+5551999999999"><i class="fas fa-phone-alt"></i>
                            <legend>+55 (51) 9999-9999</legend>
+
+                           <!-- Legend apenas com fieldset - usar span -->
+
                         </a>
                      </figcaption>
                   </div>
-                  <a href="./src/pages/funcionamento.html" class="btn">SOLICITE ORÇAMENTO</a>
+                  <a href="./contato.html" class="btn">SOLICITE ORÇAMENTO</a>
 
             </div>
          </div>

@@ -1,3 +1,7 @@
+body .ativo {
+   overflow: hidden;
+}
+
 header {
    width: 100%;
 }
@@ -20,7 +24,7 @@ header {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: #1a202dea;
+   background-color: var(--dark-blue);
    opacity: 0;
    transition: 200ms ease-in-out;
    border-radius: 4px;
@@ -31,6 +35,10 @@ header {
    transition: 200ms ease-in-out;
    opacity: 1;
    z-index: 10;
+}
+
+.navbar-links.ativo > body {
+   overflow: hidden;
 }
 
 .navbar-links li {
@@ -168,6 +176,10 @@ header {
     .navbar-links li {
       align-self: flex-end;
    }  
+
+   .navbar-links li a {
+      font-size: 1.2rem;
+   }
 
 
 

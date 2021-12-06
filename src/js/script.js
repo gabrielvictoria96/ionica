@@ -4,7 +4,6 @@ const activeClass = 'ativo';
 const mobileButton = document.querySelector('.navbar-btn');
 const navLinks = document.querySelector('.navbar-links');
 const links = document.querySelectorAll('.navbar-links li a');
-
 mobileButton.addEventListener('click', () => {
    navLinks.classList.toggle(activeClass);
 });

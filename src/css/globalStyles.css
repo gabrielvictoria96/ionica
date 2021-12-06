@@ -48,18 +48,13 @@ h1 {
 }
 
 h2 {
-<<<<<<< HEAD
-   text-transform: uppercase;
    font-size: 1.8rem;
    font-family: helvetica, arial, sans-serif;
 }
 
 h3 {
    font-family: helvetica, arial, sans-serif;
-=======
-  text-transform: uppercase;
   font-size: 1.8rem;
->>>>>>> 115e621e1d2eb6c9a3818cf9e9ccaa3bf0caf8a9
 }
 
 .p-mob {
@@ -71,16 +66,9 @@ h3 {
 }
 
 .content {
-<<<<<<< HEAD
    width: 100%;
    max-width: 1540px;
    margin: 0 auto;
    padding: 10px;
 }
-=======
-  width: 100%;
-  max-width: 1540px;
-  margin: 0 auto;
-  padding: 10px;
-}
->>>>>>> 115e621e1d2eb6c9a3818cf9e9ccaa3bf0caf8a9
+

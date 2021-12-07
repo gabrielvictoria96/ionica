@@ -329,4 +329,31 @@ h1 .bold-title {
 
 }
 
-@media only screen and (min-width: 799px) {}
+@media only screen and (min-width: 799px) {
+
+    #why-solar h2,
+    #why-solar p {
+        color: var(--white);
+        margin-bottom: 1.2rem;
+        max-width: 980px;
+    }
+
+    .about-info-container {
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+    }
+
+
+    #about-info .about-info-container p {
+        text-align: left;
+        max-width: 900px;
+    }
+
+    .about-info-subtitle {
+        text-align: center !important;
+    }
+
+    .title-sobre {
+        margin: 0;
+    }
+}

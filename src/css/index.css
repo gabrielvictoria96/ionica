@@ -92,6 +92,7 @@ h1 .bold-title {
 
 .about-info-container {
     padding: 1rem 0;
+    margin-bottom: 2rem;
 }
 
 .about-info-container img {
@@ -316,9 +317,15 @@ h1 .bold-title {
     }
 
 
+    #como-funciona .como-funciona-cta {
+        text-align: center;
+        position: relative;
+        top: 190px;
+    }
 
-
-
+    #como-funciona .como-funciona-cta h2 {
+        font-size: 3.5rem;
+    }
 
 }
 

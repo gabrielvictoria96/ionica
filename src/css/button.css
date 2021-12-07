@@ -21,11 +21,12 @@
     font-size: .9rem;
     width: 115px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.25);
     margin: .5rem;
+    background-color: transparent;
+    border-radius: 0;
 }
 
-.interactive-btn:active {
-    background-color: rgba(255, 255, 255, 1);
-    color: var(--dark-blue);
+.interactive-btn.selected {
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
 }

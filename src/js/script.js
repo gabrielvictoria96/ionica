@@ -1,11 +1,18 @@
 //
 
 const activeClass = 'ativo';
+const selectedClass = 'selected';
 
-
-
+//Tabnav index.html
 const tabSelectors = document.querySelectorAll('.js-textbox-selectors li');
 const textBoxes = document.querySelectorAll('.js-textbox p');
+
+function decorateTabSelector(index) {
+   tabSelectors.forEach((interactiveBtn) => {
+      interactiveBtn.classList.remove(selectedClass);
+   })
+   tabSelectors[index].classList.add(selectedClass);
+}
 
 function activateTextBox(index) {
    textBoxes.forEach((paragraph) => {
@@ -16,6 +23,7 @@ function activateTextBox(index) {
 
 tabSelectors.forEach((interactiveBtn, index) => {
    interactiveBtn.addEventListener('click', () => {
+      decorateTabSelector(index)
       activateTextBox(index)
    })
 

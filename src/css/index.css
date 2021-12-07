@@ -58,6 +58,14 @@ h1 .bold-title {
     text-align: center;
 }
 
+#interactive-info .js-textbox p {
+    display: none;
+}
+
+#interactive-info .js-textbox p.ativo {
+    display: block;
+}
+
 /* #about-info */
 
 #about-info {
@@ -121,6 +129,7 @@ h1 .bold-title {
     width: 90%;
     margin: 1.6rem auto;
     font-size: 1rem;
+
 }
 
 .pillar-icon {
@@ -149,6 +158,13 @@ h1 .bold-title {
 }
 
 /*RESPONSIVIDADE*/
+
+@media only screen and (min-width: 550px) {
+    .pillar {
+        width: 70%;
+
+    }
+}
 
 @media only screen and (min-width: 639px) {
 
@@ -191,8 +207,6 @@ h1 .bold-title {
     }
 
     .pillar {
-        /* border: 1px solid red; */
-        padding: 1rem .75rem;
         width: 50%;
         display: inline-block;
 
@@ -220,11 +234,6 @@ h1 .bold-title {
         /* width: 90%; */
 
     }
-
-    .about-info-container ul li {
-        font-size: .9rem;
-    }
-
 
     /* COMO-FUNCIONA */
 
@@ -261,12 +270,15 @@ h1 .bold-title {
         max-width: 500px;
     }
 
+    /*why-solar*/
 
     #why-solar h2,
     #why-solar p {
         max-width: 80%;
         margin: 1.2rem auto;
     }
+
+    #why-solar h2 {}
 
     #why-solar p {
         font-size: 1.2rem;

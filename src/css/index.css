@@ -38,6 +38,8 @@ h1 .bold-title {
     margin-bottom: 1.2rem;
 }
 
+
+
 /*#interactive-info*/
 
 
@@ -54,8 +56,27 @@ h1 .bold-title {
 #interactive-info .interactive-text-box {
     background: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
-    padding: 9px;
+    padding: 1.3rem .75rem;
     text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#interactive-info .js-textbox i {
+    display: block;
+    font-size: 4rem;
+    color: var(--orange);
+    margin-bottom: 1rem;
+}
+
+#interactive-info .js-textbox p.faded {
+    display: none;
+    color: var(--dark-blue);
+    transition: color 300ms ease-in-out;
+}
+
+#interactive-info .js-textbox p.ativo {
+    display: block;
 }
 
 /* #about-info */
@@ -71,6 +92,7 @@ h1 .bold-title {
 
 .about-info-container {
     padding: 1rem 0;
+    margin-bottom: 2rem;
 }
 
 .about-info-container img {
@@ -80,6 +102,10 @@ h1 .bold-title {
 
 #vision img {
     width: 180px;
+}
+
+#about-info .about-info-container p {
+    margin-bottom: 1.2rem;
 }
 
 .about-info-container p,
@@ -96,16 +122,37 @@ h1 .bold-title {
     margin-bottom: 1.5rem;
 }
 
-#mission .about-info-subtitle {
+#values .about-info-subtitle {
     color: #9CAEC6;
     font-weight: 700;
-    width: 70%;
+    font-size: 1.3rem;
+    width: 90%;
     margin: 0 auto 1rem;
 }
 
 .mission-info-bold {
     font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--orange);
+    display: block;
+    margin-bottom: .7rem;
 }
+
+.pillar {
+    padding: 1rem .75rem;
+    width: 90%;
+    margin: 1.6rem auto;
+    font-size: 1rem;
+
+}
+
+.pillar-icon {
+    display: block !important;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+
 
 /* #como-funciona */
 
@@ -126,7 +173,14 @@ h1 .bold-title {
 
 /*RESPONSIVIDADE*/
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 550px) {
+    .pillar {
+        width: 70%;
+
+    }
+}
+
+@media only screen and (min-width: 639px) {
 
     /*HERO*/
 
@@ -161,6 +215,23 @@ h1 .bold-title {
     }
 
 
+    .values-pillars {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .pillar {
+        width: 50%;
+        display: inline-block;
+
+    }
+
+    .pillar-icon {
+        display: block !important;
+        font-size: 3rem;
+    }
+
+
     /* INTERACTIVE-INFO */
 
     #interactive-info .interactive-text-box {
@@ -174,14 +245,9 @@ h1 .bold-title {
     .about-info-container ul li {
         font-size: 1rem;
         line-height: 1.7rem;
-        width: 90%;
-        margin: 0 auto;
-    }
+        /* width: 90%; */
 
-    .about-info-container ul li {
-        font-size: .9rem;
     }
-
 
     /* COMO-FUNCIONA */
 
@@ -205,4 +271,89 @@ h1 .bold-title {
         font-size: 1.2rem;
     }
 
+}
+
+@media only screen and (min-width: 799px) {
+
+    #index-hero-header {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #index-hero-header img {
+        max-width: 500px;
+    }
+
+    /*why-solar*/
+
+    #why-solar h2,
+    #why-solar p {
+        max-width: 80%;
+        margin: 1.2rem auto;
+    }
+
+    #why-solar h2 {}
+
+    #why-solar p {
+        font-size: 1.2rem;
+    }
+
+    #interactive-info .interactive-text-box {
+        max-width: 460px;
+    }
+
+
+
+    #about-info .about-info-container p {
+        max-width: 70%;
+        font-size: 1.2rem;
+        margin: 1rem auto;
+    }
+
+    .values-pillars {
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+
+
+    #como-funciona .como-funciona-cta {
+        text-align: center;
+        position: relative;
+        top: 190px;
+    }
+
+    #como-funciona .como-funciona-cta h2 {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 799px) {
+
+    #why-solar h2,
+    #why-solar p {
+        color: var(--white);
+        margin-bottom: 1.2rem;
+        max-width: 980px;
+    }
+
+    .about-info-container {
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+    }
+
+
+    #about-info .about-info-container p {
+        text-align: left;
+        max-width: 900px;
+    }
+
+    .about-info-subtitle {
+        text-align: center !important;
+    }
+
+    .title-sobre {
+        margin: 0;
+    }
 }

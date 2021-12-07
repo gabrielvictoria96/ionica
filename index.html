@@ -41,16 +41,16 @@
                <i class="fas fa-bars"></i>
             </div>
          </nav>
+         <section id="index-hero-header">
+
+            <div class="title-link-container">
+               <h1><span class="bold-title">Repense</span> seu consumo de energia.</h1>
+               <a href="./src/pages/contato.html" class="btn">solicite orçamento</a>
+            </div>
+            <img class="homepage-background" src="./src/assets/img/Homepage-background.jpg" alt="">
+         </section>
       </header>
 
-      <section id="index-hero-header">
-
-         <div class="title-link-container">
-            <h1><span class="bold-title">Repense</span> seu consumo de energia.</h1>
-            <a href="./src/pages/contato.html" class="btn">solicite orçamento</a>
-         </div>
-         <img src="./src/assets/img/Homepage-background.jpg" alt="">
-      </section>
 
       <section id="why-solar">
          <h2>Por que energia solar?</h2>
@@ -64,22 +64,32 @@
       </section>
 
       <section id="interactive-info">
-         <div class="interactive-btns-container">
-            <div class="btn interactive-btn">economize</div>
-            <div class="btn interactive-btn">valorize</div>
-            <div class="btn interactive-btn">invista</div>
-            <div class="btn interactive-btn">cuide</div>
-         </div>
+         <ul class="interactive-btns-container js-textbox-selectors">
+            <li class="btn interactive-btn selected">economize</li>
+            <li class="btn interactive-btn">valorize</li>
+            <li class="btn interactive-btn">invista</li>
+            <li class="btn interactive-btn">cuide</li>
+         </ul>
 
-         <div class="interactive-text-box">
-            <p>➜ Toda a energia gerada é aproveitada para abater o seu consumo.</p>
+         <div class="interactive-text-box js-textbox">
+            <p class="faded ativo">
+               <i class="fa fa-piggy-bank"></i>
+               Toda a energia gerada é aproveitada para abater o seu consumo.</p>
+            <p class="faded">
+               <i class="fa fa-coins"></i>
+               Agregue valor de mercado à sua empresa através do uso de energias renováveis.
+            </p>
+            <p class="faded"><i class="fa fa-chart-line"></i>
+               Aderir às energias renováveis é um passo em direção ao futuro.</p>
+            <p class="faded"> <i class="fa fa-seedling"></i>
+               Colabore com a construção de uma matriz energética mais limpa.</p>
          </div>
       </section>
 
       <section id="about-info">
          <!-- Trocar divs por articles -->
          <div class="about-info-container">
-            <img src="./src/assets/img/sobre.png" alt="Sobre">
+            <img src="./src/assets/img/sobre.png" alt="Sobre" class="title-sobre">
             <p>Somos a iônica, uma empresa jovem e com ideais sustentáveis, que tem o objetivo de mudar a forma como
                utilizamos a energia em nosso dia a dia. </p>
 
@@ -110,14 +120,21 @@
                Nossos valores podem ser resumidos em três pilares:
             </p>
             <!-- Usar p dentro dos li  -->
-            <ul>
-               <li><span class="mission-info-bold">Social</span>: Queremos entregar a melhor solução possível para
+            <ul class="values-pillars">
+               <li class="pillar"> <i class="pillar-icon fa fa-user-friends"></i> <span
+                     class="mission-info-bold">Social</span>
+                  Queremos entregar a melhor solução
+                  possível para
                   nossos
                   clientes.</li>
-               <li><span class="mission-info-bold">Econômico</span>: Nossas soluções visam a redução dos gastos com
+               <li class="pillar"> <i class="pillar-icon fa fa-piggy-bank"></i> <span
+                     class="mission-info-bold">Econômico</span> Nossas soluções visam a redução dos
+                  gastos com
                   energia
                   elétrica.</li>
-               <li><span class="mission-info-bold">Ambiental</span>: Talvez o mais importante, buscamos implantar
+               <li class="pillar"> <i class="pillar-icon fa fa-seedling"></i> <span
+                     class="mission-info-bold">Ambiental</span> O mais importante: buscamos
+                  implantar
                   soluções
                   que reduzam o impacto do nosso consumo
                   de energia no meio ambiente.</li>

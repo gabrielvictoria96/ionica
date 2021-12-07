@@ -19,6 +19,7 @@
 html {
   font-family: var(--primary-font);
   scroll-behavior: smooth;
+  margin: 0 auto;
 }
 
 body {
@@ -43,17 +44,18 @@ li {
   overflow-x: hidden;
 }
 
-h1 {
+h1,
+h2 {
   text-transform: uppercase;
 }
 
 h2 {
-   font-size: 1.8rem;
-   font-family: helvetica, arial, sans-serif;
+  font-size: 1.8rem;
+  font-family: helvetica, arial, sans-serif;
 }
 
 h3 {
-   font-family: helvetica, arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
   font-size: 1.8rem;
 }
 
@@ -66,9 +68,8 @@ h3 {
 }
 
 .content {
-   width: 100%;
-   max-width: 1540px;
-   margin: 0 auto;
-   padding: 10px;
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 10px;
 }
-
